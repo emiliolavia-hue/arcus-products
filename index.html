@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcus Products × BigChange: The Whole Pool Job in One Place</title>
+    <meta name="description" content="A tailored proposal for Arcus Products: one job folder for every pool and enclosure install, with on-site extras recorded, digital RAMS, subcontractors on the app and stage invoices synced to Xero.">
+    <meta name="author" content="BigChange">
+    <meta property="og:title" content="Arcus Products &amp; BigChange: The Whole Pool Job in One Place">
+    <meta property="og:description" content="Photos, extras, RAMS, timesheets and stage invoices in one job folder, with Quotient and Xero staying put.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Flex:opsz,wght@8..144,500;8..144,700;8..144,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+    <style>
+        :root {
+            --bc-energy-blue: #0072CE;
+            --bc-navy: #0A2240;
+            --bc-green: #28E289;
+            --bc-orange: #FF6B00;
+            --bc-light-grey: #F4F4F4;
+            --bc-charcoal: #282922;
+            --bc-white: #FFFFFF;
+            --bc-red: #E02B20;
+
+            --spacing-1: 0.25rem;
+            --spacing-2: 0.5rem;
+            --spacing-4: 1rem;
+            --spacing-6: 1.5rem;
+            --spacing-8: 2rem;
+            --spacing-12: 3rem;
+            --spacing-16: 4rem;
+
+            --border-radius: 0.85rem;
+            --box-shadow: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.08);
+            --transition-speed: 0.3s;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: var(--bc-white);
+            color: var(--bc-charcoal);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container { max-width: 1150px; margin: 0 auto; padding: 0 var(--spacing-6); }
+        section { padding: var(--spacing-16) 0; }
+        h1, h2, h3, h4 { font-family: 'Roboto Flex', 'Inter', system-ui, sans-serif; color: var(--bc-navy); line-height: 1.15; margin-bottom: var(--spacing-4); }
+        h1 { font-size: 2.9rem; font-weight: 800; letter-spacing: -0.02em; }
+        h2 { font-size: 2.1rem; font-weight: 800; letter-spacing: -0.01em; }
+        h3 { font-size: 1.4rem; font-weight: 700; }
+        a { color: var(--bc-energy-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        mark.hl-g { background: linear-gradient(180deg, transparent 55%, rgba(40,226,137,0.55) 55%); color: inherit; padding: 0 2px; }
+        mark.hl-b { background: linear-gradient(180deg, transparent 55%, rgba(0,114,206,0.28) 55%); color: inherit; padding: 0 2px; }
+
+        .section-title { text-align: center; margin-bottom: var(--spacing-12); max-width: 860px; margin-left: auto; margin-right: auto; }
+        .section-title p { font-size: 1.08rem; color: #4b5563; }
+        .eyebrow {
+            display: inline-block; font-size: 0.78rem; font-weight: 800;
+            letter-spacing: 0.15em; text-transform: uppercase;
+            color: var(--bc-energy-blue); margin-bottom: var(--spacing-2);
+        }
+
+        /* Sticky nav */
+        #sticky-nav { position: sticky; top: 0; z-index: 100; background-color: rgba(10,34,64,0.97); backdrop-filter: blur(8px); box-shadow: 0 2px 12px rgba(0,0,0,0.25); }
+        #sticky-nav .container { display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-4); padding-top: 0.7rem; padding-bottom: 0.7rem; }
+        #sticky-nav .nav-brand img { height: 26px; display: block; }
+        #sticky-nav .nav-links { display: flex; gap: var(--spacing-4); flex-wrap: wrap; align-items: center; }
+        #sticky-nav .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.85rem; font-weight: 600; padding: 0.3rem 0.2rem; border-bottom: 2px solid transparent; transition: all var(--transition-speed); }
+        #sticky-nav .nav-links a:hover { color: var(--bc-green); text-decoration: none; border-bottom-color: var(--bc-green); }
+        #sticky-nav .nav-cta { background-color: var(--bc-green); color: var(--bc-navy) !important; padding: 0.45rem 1rem !important; border-radius: 8px; border-bottom: none !important; font-weight: 700; }
+        #sticky-nav .nav-cta:hover { background-color: #21c476; }
+
+        /* Hero */
+        #hero {
+            background: linear-gradient(150deg, var(--bc-navy) 0%, #0d2f5c 55%, #0a4a8f 100%);
+            color: var(--bc-white); padding: var(--spacing-16) 0; text-align: center;
+            position: relative; overflow: hidden;
+        }
+        #hero::before { content: ''; position: absolute; top: -160px; right: -160px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(40,226,137,0.16) 0%, transparent 70%); pointer-events: none; }
+        #hero::after { content: ''; position: absolute; bottom: -200px; left: -180px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(0,114,206,0.25) 0%, transparent 70%); pointer-events: none; }
+        #hero .container { position: relative; z-index: 1; }
+        #hero h1, #hero p { color: var(--bc-white); }
+        #hero h1 { font-size: 3rem; max-width: 980px; margin-left: auto; margin-right: auto; }
+        #hero .subhead { font-size: 1.2rem; max-width: 860px; margin: var(--spacing-4) auto var(--spacing-8); opacity: 0.92; }
+        .hero-pill { display: inline-flex; align-items: center; gap: 0.5rem; background-color: rgba(40,226,137,0.12); border: 1px solid rgba(40,226,137,0.5); color: var(--bc-green); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.45rem 1.1rem; border-radius: 9999px; margin-bottom: var(--spacing-6); }
+        .logo-chip { background:#fff; border-radius: 10px; padding: 10px 16px; display:inline-flex; align-items:center; }
+        .logo-chip img { height: 40px; display:block; }
+        .logo-chip .logo-fallback { font-family:'Roboto Flex',sans-serif; font-weight:800; font-size:1.3rem; color:var(--bc-navy); letter-spacing:-0.01em; }
+
+        .single-video-wrapper { max-width: 760px; margin: 0 auto var(--spacing-8); }
+        .video-block h4 { color: var(--bc-white); font-size: 1rem; margin-bottom: 0.6rem; opacity: 0.92; display: flex; align-items: center; gap: 0.5rem; justify-content: center; }
+        .video-block h4 .msi { font-size: 20px; color: var(--bc-green); }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.5); background: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+        .cta-buttons { display: flex; justify-content: center; gap: var(--spacing-4); flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 0.8rem 1.8rem; border-radius: var(--border-radius); font-weight: 700; text-decoration: none; transition: all var(--transition-speed); border: 2px solid transparent; cursor: pointer; font-size: 1rem; }
+        .btn-primary { background-color: var(--bc-green); border-color: var(--bc-green); color: var(--bc-navy); }
+        .btn-primary:hover { background-color: #21c476; text-decoration: none; }
+        .btn-secondary { background-color: transparent; color: var(--bc-white); border-color: var(--bc-white); }
+        .btn-secondary:hover { background-color: var(--bc-white); color: var(--bc-navy); text-decoration: none; }
+
+        /* Hero brief cards */
+        .brief-band { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-4); max-width: 1060px; margin: var(--spacing-12) auto 0; }
+        .brief-card { background-color: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--border-radius); padding: var(--spacing-6) var(--spacing-4); text-align: left; }
+        .brief-card .msi { font-size: 30px; color: var(--bc-green); margin-bottom: 0.6rem; display: block; }
+        .brief-card h4 { color: var(--bc-white); font-size: 1.02rem; margin-bottom: 0.35rem; }
+        .brief-card p { color: var(--bc-white); font-size: 0.82rem; opacity: 0.88; line-height: 1.45; }
+
+        /* What we heard -> what changes (compact comparison) */
+        .compare { border: 1px solid #e5e7eb; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow); background: var(--bc-white); }
+        .compare-head, .compare-row { display: grid; grid-template-columns: 1fr 1fr; }
+        .compare-head > div { padding: 0.8rem 1.4rem; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; display: flex; align-items: center; gap: 0.4rem; }
+        .compare-head .ch-current { background-color: #fff1e6; color: #b45309; }
+        .compare-head .ch-fix { background-color: #e9fbf1; color: #0b7a45; }
+        .compare-head .msi { font-size: 16px; }
+        .compare-row > div { padding: 0.6rem 1.2rem 0.6rem 2.2rem; font-size: 0.86rem; line-height: 1.45; color: var(--bc-navy); position: relative; border-top: 1px solid #eef0f2; }
+        .compare-row .cc-current { background-color: #fff7f0; }
+        .compare-row .cc-fix { background-color: #f7fdf9; border-left: 1px solid #e5e7eb; }
+        .compare-row .cc-current::before, .compare-row .cc-fix::before { content: ''; position: absolute; left: 1.1rem; top: 0.95rem; width: 8px; height: 8px; border-radius: 50%; }
+        .compare-row .cc-current::before { background-color: var(--bc-orange); }
+        .compare-row .cc-fix::before { background-color: var(--bc-green); }
+
+        /* Discovery quote callout */
+        .discovery-quote { max-width: 900px; margin: 0 auto var(--spacing-12); background: var(--bc-navy); color: #fff; border-radius: var(--border-radius); padding: var(--spacing-8); position: relative; box-shadow: var(--box-shadow); }
+        .discovery-quote .msi { position: absolute; top: 16px; left: 20px; font-size: 46px; color: rgba(40,226,137,0.35); }
+        .discovery-quote blockquote { font-family: 'Roboto Flex', sans-serif; font-size: 1.5rem; font-weight: 700; line-height: 1.3; color: #fff; padding-left: 2.6rem; }
+        .discovery-quote cite { display: block; margin-top: var(--spacing-4); padding-left: 2.6rem; font-style: normal; font-size: 0.9rem; color: var(--bc-green); font-weight: 600; }
+
+        /* Feature hub (interactive platform matrix) */
+        .msi { font-family: 'Material Symbols Outlined'; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased; }
+        .features-layout { display: grid; grid-template-columns: 1fr 1.1fr; gap: var(--spacing-8); align-items: center; }
+        #feature-display { background-color: var(--bc-white); border: 1px solid #e5e7eb; border-radius: var(--border-radius); padding: var(--spacing-8); min-height: 320px; display: flex; flex-direction: column; justify-content: center; box-shadow: var(--box-shadow); }
+        #feature-display-content { transition: opacity 0.4s ease-in-out; }
+        #feature-display-content .fd-head { display: flex; align-items: center; gap: var(--spacing-4); margin-bottom: var(--spacing-4); }
+        #feature-display-content .fd-head .msi { font-size: 40px; color: var(--bc-energy-blue); }
+        #feature-display-content h3 { margin-bottom: 0; font-size: 1.5rem; }
+        #feature-display-content .fd-desc { font-size: 0.98rem; color: var(--bc-charcoal); }
+        #feature-display-content .fd-you { display: flex; align-items: flex-start; gap: 0.5rem; margin-top: var(--spacing-4); background-color: #f0fdf6; border: 1px solid #b9f3d6; border-radius: 8px; padding: var(--spacing-2) var(--spacing-4); font-size: 0.9rem; color: var(--bc-navy); font-weight: 600; }
+        #feature-display-content .fd-you .msi { font-size: 18px; color: #0b7a45; flex-shrink: 0; margin-top: 2px; }
+        .platform-hub-container { position: relative; width: 100%; max-width: 560px; aspect-ratio: 1 / 1; margin: auto; }
+        .hub-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 130px; height: 130px; background-color: var(--bc-navy); border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; z-index: 10; box-shadow: 0 0 20px rgba(10, 34, 64, 0.5); animation: hub-pulse 2s infinite; text-align: center; padding: 10px; }
+        .hub-center img { max-width: 90px; height: auto; }
+        @keyframes hub-pulse { 0% { box-shadow: 0 0 0 0 rgba(0, 114, 206, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(0, 114, 206, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 114, 206, 0); } }
+        .hub-node { position: absolute; width: 86px; height: 86px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: white; border-radius: 50%; box-shadow: 0 5px 15px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; z-index: 5; padding: 8px; border: 3px solid transparent; }
+        .hub-node.active, .hub-node:hover { transform: scale(1.1) translateY(-5px); box-shadow: 0 10px 25px rgba(0, 114, 206, 0.3); border-color: var(--bc-energy-blue); z-index: 20; }
+        .hub-node .msi { font-size: 26px; color: var(--bc-energy-blue); }
+        .hub-node .feature-name { font-size: 9px; font-weight: 600; margin-top: 4px; color: var(--bc-navy); line-height: 1.2; }
+        .hub-line { position: absolute; background-color: #d1d5db; height: 2px; transform-origin: left center; z-index: 1; }
+        .feature-tile-grid { display: none; }
+        @media (max-width: 900px) {
+            .features-layout { grid-template-columns: 1fr; }
+            .platform-hub-container { display: none; }
+            .feature-tile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); gap: var(--spacing-2); }
+            .feature-tile { background: white; border: 2px solid #e5e7eb; border-radius: 10px; padding: 0.7rem 0.4rem; text-align: center; cursor: pointer; transition: all 0.25s ease; font-family: inherit; }
+            .feature-tile .msi { font-size: 24px; color: var(--bc-energy-blue); }
+            .feature-tile .feature-name { display: block; font-size: 0.68rem; font-weight: 600; color: var(--bc-navy); margin-top: 4px; line-height: 1.2; }
+            .feature-tile.active { border-color: var(--bc-energy-blue); box-shadow: 0 4px 12px rgba(0,114,206,0.2); }
+        }
+
+        /* Complete-system edge band */
+        .edge-band { display: grid; grid-template-columns: auto 1fr; gap: var(--spacing-6); align-items: center; background: var(--bc-navy); color: var(--bc-white); border-radius: var(--border-radius); padding: var(--spacing-6) var(--spacing-8); margin-bottom: var(--spacing-12); box-shadow: var(--box-shadow); border-left: 6px solid var(--bc-green); }
+        .edge-band .edge-icon { width: 62px; height: 62px; border-radius: 16px; background: rgba(40,226,137,0.14); display: flex; align-items: center; justify-content: center; }
+        .edge-band .edge-icon .msi { font-size: 34px; color: var(--bc-green); }
+        .edge-band h3 { color: var(--bc-white); font-size: 1.35rem; margin-bottom: 0.4rem; }
+        .edge-band p { font-size: 0.96rem; opacity: 0.9; margin: 0; }
+        .edge-band p .hl { color: var(--bc-green); font-weight: 700; }
+        @media (max-width: 700px) { .edge-band { grid-template-columns: 1fr; text-align: left; } }
+
+        /* Dark band section */
+        #integration { background: linear-gradient(150deg, var(--bc-navy) 0%, #0d2f5c 60%, #0a4a8f 100%); color: var(--bc-white); position: relative; overflow: hidden; padding: var(--spacing-12) 0; }
+        #integration::before { content: ''; position: absolute; top: -140px; left: -120px; width: 460px; height: 460px; border-radius: 50%; background: radial-gradient(circle, rgba(0,114,206,0.28) 0%, transparent 70%); pointer-events: none; }
+        #integration .container { position: relative; z-index: 1; }
+        #integration .section-title h2, #integration .section-title p { color: var(--bc-white); }
+        #integration .section-title p { opacity: 0.9; }
+        .flow-diagram { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--spacing-4); align-items: stretch; max-width: 960px; margin: 0 auto var(--spacing-8); }
+        .flow-node { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--border-radius); padding: var(--spacing-6); text-align: center; display: flex; flex-direction: column; justify-content: center; }
+        .flow-node.brand-navy { background: rgba(40,226,137,0.10); border-color: rgba(40,226,137,0.5); }
+        .flow-node .flow-logo { font-family: 'Roboto Flex', sans-serif; font-weight: 800; font-size: 1.25rem; color: #fff; margin-bottom: 0.3rem; }
+        .flow-node .flow-sub { font-size: 0.8rem; opacity: 0.82; }
+        .flow-node .flow-tag { display: inline-block; margin-top: 0.6rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bc-green); }
+        .flow-arrows { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: var(--spacing-4); min-width: 150px; }
+        .flow-arrow { width: 100%; text-align: center; }
+        .flow-arrow .flow-label { font-size: 0.72rem; font-weight: 700; opacity: 0.9; display: block; margin-bottom: 2px; }
+        .flow-arrow .flow-bar { position: relative; height: 2px; margin: 0 12px; border-radius: 2px; }
+        .flow-arrow.pull .flow-bar { background: linear-gradient(90deg, rgba(40,226,137,0.25), var(--bc-green)); }
+        .flow-arrow.pull .flow-bar::after { content: ''; position: absolute; right: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 9px solid var(--bc-green); }
+        .flow-arrow.push .flow-bar { background: linear-gradient(90deg, var(--bc-energy-blue), rgba(0,114,206,0.25)); }
+        .flow-arrow.push .flow-bar::before { content: ''; position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-right: 9px solid #4aa3e8; }
+        .flow-detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-4); max-width: 960px; margin: 0 auto; }
+        .flow-detail { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: var(--spacing-4); }
+        .flow-detail .msi { font-size: 26px; color: var(--bc-green); margin-bottom: 0.4rem; display: block; }
+        .flow-detail h4 { color: #fff; font-size: 0.98rem; margin-bottom: 0.25rem; }
+        .flow-detail p { color: #fff; font-size: 0.82rem; opacity: 0.85; line-height: 1.45; }
+        .integ-note { display: flex; align-items: flex-start; gap: 0.6rem; margin: var(--spacing-8) auto 0; max-width: 960px; background-color: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.16); border-radius: 10px; padding: 0.9rem 1.2rem; font-size: 0.9rem; color: #fff; }
+        .integ-note .msi { font-size: 20px; color: var(--bc-green); flex-shrink: 0; margin-top: 1px; }
+        @media (max-width: 820px) {
+            .flow-diagram { grid-template-columns: 1fr; }
+            .flow-arrows { flex-direction: row; min-width: 0; padding: var(--spacing-2) 0; }
+            .flow-arrow .flow-bar { min-width: 90px; }
+            .flow-detail-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Dashcam / vehicle-check spotlight */
+        #cameras { background: var(--bc-light-grey); position: relative; overflow: hidden; padding: var(--spacing-16) 0; }
+        .dashcam-layout { display: grid; grid-template-columns: 1.05fr 1fr; gap: var(--spacing-8); align-items: center; }
+        .dashcam-video { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; border-radius: var(--border-radius); box-shadow: 0 12px 34px rgba(0,0,0,0.25); background: #000; border: 1px solid rgba(0,0,0,0.08); }
+        .dashcam-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .dashcam-copy h3 { font-size: 1.6rem; margin-bottom: var(--spacing-4); }
+        .dashcam-copy .lead { font-size: 1rem; color: #4b5563; margin-bottom: var(--spacing-6); }
+        .dashcam-copy .lead .hl { color: #0b7a45; font-weight: 700; }
+        .dashcam-features { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-4); }
+        .dc-feature { background: var(--bc-white); border: 1px solid #e5e7eb; border-radius: 12px; padding: var(--spacing-4); box-shadow: var(--box-shadow); }
+        .dc-feature .msi { font-size: 26px; color: var(--bc-energy-blue); margin-bottom: 0.4rem; display: block; }
+        .dc-feature h4 { color: var(--bc-navy); font-size: 0.98rem; margin-bottom: 0.25rem; }
+        .dc-feature p { color: var(--bc-charcoal); font-size: 0.82rem; opacity: 0.9; line-height: 1.45; }
+        .dashcam-you { display: flex; align-items: flex-start; gap: 0.6rem; margin-top: var(--spacing-6); background-color: #f0fdf6; border: 1px solid #b9f3d6; border-radius: 10px; padding: 0.8rem 1.1rem; font-size: 0.92rem; color: var(--bc-navy); font-weight: 600; }
+        .dashcam-you .msi { font-size: 20px; color: #0b7a45; flex-shrink: 0; margin-top: 1px; }
+        @media (max-width: 900px) { .dashcam-layout { grid-template-columns: 1fr; } }
+        @media (max-width: 480px) { .dashcam-features { grid-template-columns: 1fr; } }
+
+        /* Phased rollout timeline */
+        .phase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-6); position: relative; }
+        .phase-card { background: var(--bc-white); border: 1px solid #e5e7eb; border-radius: var(--border-radius); padding: var(--spacing-8) var(--spacing-6) var(--spacing-6); box-shadow: var(--box-shadow); position: relative; }
+        .phase-card .phase-num { position: absolute; top: -22px; left: var(--spacing-6); width: 44px; height: 44px; border-radius: 50%; background: var(--bc-energy-blue); color: #fff; font-family: 'Roboto Flex', sans-serif; font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,114,206,0.35); }
+        .phase-card.p1 { border-top: 5px solid var(--bc-green); }
+        .phase-card.p1 .phase-num { background: #0b7a45; }
+        .phase-card .phase-tag { display: inline-block; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bc-energy-blue); margin: 0.4rem 0 0.3rem; }
+        .phase-card.p1 .phase-tag { color: #0b7a45; }
+        .phase-card h3 { font-size: 1.2rem; margin-bottom: var(--spacing-4); }
+        .phase-card ul { list-style: none; }
+        .phase-card li { padding-left: 1.6rem; position: relative; margin-bottom: var(--spacing-2); font-size: 0.9rem; }
+        .phase-card li::before { content: ''; position: absolute; left: 0; top: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--bc-green); }
+        .phase-card .phase-foot { margin-top: var(--spacing-4); font-size: 0.85rem; font-style: italic; color: #6b7280; }
+        @media (max-width: 860px) { .phase-grid { grid-template-columns: 1fr; gap: var(--spacing-8); } }
+
+        /* Case studies */
+        .case-study-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-6); }
+        .case-study-card { background-color: var(--bc-white); border: 1px solid #e5e7eb; padding: var(--spacing-6); border-radius: var(--border-radius); display: flex; flex-direction: column; box-shadow: var(--box-shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .case-study-card:hover { transform: translateY(-6px); box-shadow: 0 12px 20px -6px rgba(0,0,0,0.12); }
+        .case-logo-wrap { height: 50px; display: flex; align-items: center; margin-bottom: var(--spacing-4); }
+        .case-study-logo { max-height: 44px; max-width: 170px; object-fit: contain; display: block; }
+        .case-study-logo-text { font-size: 1.35rem; font-weight: 800; color: var(--bc-navy); font-family: 'Roboto Flex', sans-serif; }
+        .case-industry { font-size: 0.8rem; color: #6b7280; font-style: italic; margin-bottom: var(--spacing-2); display: block; }
+        .case-stat { font-size: 1.3rem; font-weight: 800; color: var(--bc-energy-blue); margin-bottom: var(--spacing-4); line-height: 1.3; font-family: 'Roboto Flex', sans-serif; }
+        .case-desc { font-size: 0.94rem; flex-grow: 1; margin-bottom: var(--spacing-4); color: var(--bc-charcoal); }
+        .case-link { font-weight: bold; color: var(--bc-orange); font-size: 0.9rem; display: inline-flex; align-items: center; }
+        .case-link svg { width: 16px; height: 16px; margin-left: 4px; }
+
+        /* Premium case-study cards */
+        .cs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-6); }
+        .cs-card { background: linear-gradient(150deg, #061a33, var(--bc-navy) 60%, #0a3a70); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 60px rgba(10,34,64,.22); transition: transform .35s, box-shadow .35s; }
+        .cs-card:hover { transform: translateY(-6px); box-shadow: 0 28px 70px rgba(10,34,64,.30); }
+        .cs-thumb { position: relative; height: 190px; overflow: hidden; background: var(--bc-navy); }
+        .cs-thumb > img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
+        .cs-card:hover .cs-thumb > img { transform: scale(1.06); }
+        .cs-thumb::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,34,64,0) 30%, rgba(6,20,40,.92) 100%); z-index: 1; }
+        .cs-thumb-overlay { position: absolute; left: 18px; right: 18px; bottom: 16px; z-index: 2; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .cs-logo-chip { background: #fff; border-radius: 9px; padding: 7px 12px; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+        .cs-logo-chip img { max-height: 28px; max-width: 130px; object-fit: contain; display: block; }
+        .cs-logo-chip .cs-logo-fallback { font-family: 'Roboto Flex', sans-serif; font-weight: 800; font-size: 1.05rem; color: var(--bc-navy); }
+        .cs-industry { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--bc-green); }
+        .cs-body { padding: var(--spacing-6); display: flex; flex-direction: column; flex: 1; }
+        .cs-stats { display: flex; gap: 0; margin-bottom: var(--spacing-4); }
+        .cs-stat { flex: 1; text-align: center; padding: 0 6px; border-right: 1px solid rgba(255,255,255,.12); }
+        .cs-stat:last-child { border-right: none; }
+        .cs-stat .n { font-family: 'Roboto Flex', sans-serif; font-weight: 800; font-size: 1.9rem; line-height: 1.05; background: linear-gradient(135deg, var(--bc-green), #5ad1ff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .cs-stat .l { font-size: 0.66rem; color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 5px; line-height: 1.3; }
+        .cs-quote { font-size: 0.9rem; color: rgba(255,255,255,.8); line-height: 1.6; flex: 1; margin-bottom: var(--spacing-4); }
+        .cs-who { font-size: 0.8rem; font-weight: 700; color: #fff; padding-top: var(--spacing-4); border-top: 1px solid rgba(255,255,255,.12); margin-bottom: var(--spacing-4); }
+        .cs-who span { display: block; font-weight: 500; color: rgba(255,255,255,.5); font-size: 0.75rem; margin-top: 2px; }
+        .cs-link { font-size: 0.82rem; font-weight: 700; color: var(--bc-green); text-decoration: none; margin-top: auto; display: inline-flex; align-items: center; gap: 5px; }
+        .cs-link:hover { text-decoration: underline; }
+        @media (max-width: 900px) { .cs-grid { grid-template-columns: 1fr; } }
+
+        /* Scroll reveal */
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease-out, transform .7s ease-out; }
+        .reveal.visible { opacity: 1; transform: none; }
+
+        /* Nav shadow on scroll */
+        #sticky-nav.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.35); }
+
+        /* Hero headline accent + live dot */
+        .hero-accent { background: linear-gradient(135deg, var(--bc-green), #5ad1ff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-pill .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--bc-green); display: inline-block; animation: pulse-dot 2s infinite; }
+        @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .3; transform: scale(.65); } }
+
+        /* Business case cards */
+        .bcase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-6); }
+        .bcase-card { background: var(--bc-white); border: 1px solid #e5e7eb; border-radius: var(--border-radius); padding: var(--spacing-8); box-shadow: var(--box-shadow); border-top: 5px solid var(--bc-energy-blue); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .bcase-card:hover { transform: translateY(-6px); box-shadow: 0 14px 24px -8px rgba(0,0,0,0.14); }
+        .bcase-icon { width: 58px; height: 58px; border-radius: 15px; background: #eaf4ff; display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-4); }
+        .bcase-icon .msi { font-size: 32px; color: var(--bc-energy-blue); }
+        .bcase-metric { font-size: 1.5rem; font-weight: 800; color: var(--bc-energy-blue); line-height: 1.15; margin-bottom: var(--spacing-2); font-family: 'Roboto Flex', sans-serif; }
+        .bcase-card h3 { font-size: 1.2rem; margin-bottom: var(--spacing-4); }
+        .bcase-card ul { list-style: none; }
+        .bcase-card li { padding-left: 1.6rem; position: relative; margin-bottom: var(--spacing-2); font-size: 0.94rem; }
+        .bcase-card li::before { content: ''; position: absolute; left: 0; top: 8px; width: 9px; height: 9px; border-radius: 50%; background: var(--bc-green); }
+
+        /* Next steps */
+        #next-steps { background-color: var(--bc-navy); color: var(--bc-white); padding: var(--spacing-16) 0; text-align: center; }
+        .next-steps-card { background-color: var(--bc-white); color: var(--bc-charcoal); border-radius: var(--border-radius); padding: var(--spacing-8); max-width: 860px; margin: 0 auto; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border-top: 6px solid var(--bc-energy-blue); text-align: left; }
+        .next-steps-card h3 { color: var(--bc-navy); font-size: 1.8rem; margin-bottom: var(--spacing-4); }
+        .next-steps-card > p.lead { font-size: 1.08rem; margin-bottom: var(--spacing-6); }
+        .indicative-banner { display: flex; align-items: flex-start; gap: 0.5rem; background-color: #fffbeb; border: 1px solid #fde68a; color: #92400e; border-radius: 10px; padding: 0.8rem 1rem; font-size: 0.9rem; font-weight: 600; margin-bottom: var(--spacing-6); }
+        .indicative-banner .msi { font-size: 20px; flex-shrink: 0; }
+        .offer-card { border: 2px solid var(--bc-green); background: #f5fdf9; border-radius: var(--border-radius); padding: var(--spacing-6) var(--spacing-8); margin: var(--spacing-4) 0 var(--spacing-2); }
+        .offer-card .offer-tag { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--bc-green); color: var(--bc-navy); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 9999px; margin-bottom: var(--spacing-4); }
+        .offer-card .offer-tag .msi { font-size: 15px; }
+        .offer-body h4 { color: var(--bc-navy); font-size: 1.05rem; margin-bottom: 0.3rem; }
+        .offer-body p { font-size: 0.9rem; color: var(--bc-charcoal); margin-bottom: 0.4rem; }
+        .offer-body .save { color: #0b6b40; font-weight: 700; }
+        .offer-total { margin-top: var(--spacing-4); background: var(--bc-navy); color: #fff; border-radius: 10px; padding: 0.9rem 1.2rem; font-size: 0.95rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .offer-total .ot-amount { font-family: 'Roboto Flex', sans-serif; font-size: 1.35rem; font-weight: 800; color: var(--bc-green); }
+
+        /* September deal band + quote cards */
+        .deal-band { background: linear-gradient(135deg, #e9fbf1, #d5f7e6); border: 1px solid var(--bc-green); border-radius: var(--border-radius); padding: var(--spacing-6); margin-top: var(--spacing-8); }
+        .deal-band .deal-tag { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--bc-green); color: var(--bc-navy); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 9999px; margin-bottom: var(--spacing-4); }
+        .deal-band .deal-tag .msi { font-size: 15px; }
+        .deal-band > p.deal-intro { font-size: 0.95rem; color: #0b5e38; margin-bottom: var(--spacing-6); }
+        .deal-rates { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-4); }
+        .deal-rate { background: #fff; border: 1px solid #b9f3d6; border-radius: 10px; padding: var(--spacing-4); text-align: center; }
+        .deal-rate .dr-label { font-size: 0.8rem; color: var(--bc-navy); font-weight: 700; margin-bottom: 0.35rem; line-height: 1.3; }
+        .deal-rate .dr-old { font-size: 0.82rem; color: #9ca3af; text-decoration: line-through; }
+        .deal-rate .dr-new { font-family: 'Roboto Flex', sans-serif; font-size: 1.5rem; font-weight: 800; color: #0b7a45; line-height: 1.1; }
+        .deal-rate .dr-unit { font-size: 0.7rem; color: #0b6b40; font-weight: 600; }
+        @media (max-width: 640px) { .deal-rates { grid-template-columns: 1fr; } }
+
+        .deal-grid { display: grid; grid-template-columns: 1fr; gap: var(--spacing-6); margin: var(--spacing-6) auto 0; max-width: 560px; }
+        .qcard { background: #fff; border: 1px solid #e5e7eb; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow); display: flex; flex-direction: column; }
+        .qcard.featured { border: 2px solid var(--bc-green); box-shadow: 0 12px 30px rgba(40,226,137,0.18); }
+        .qcard-head { padding: 16px 22px; background: linear-gradient(135deg, var(--bc-navy), #0d2f5c); }
+        .qcard-head .qtag { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bc-green); }
+        .qcard-head h4 { color: #fff; font-size: 1.05rem; margin: 3px 0 0; }
+        .qcard-head p { color: rgba(255,255,255,0.6); font-size: 0.8rem; margin: 3px 0 0; }
+        .qrow { padding: 11px 22px; border-bottom: 1px solid #eef0f2; display: flex; justify-content: space-between; gap: 1rem; font-size: 0.88rem; align-items: baseline; }
+        .qrow .ql { color: var(--bc-navy); }
+        .qrow .ql small { display: block; color: #6b7280; font-size: 0.75rem; }
+        .qrow .qv { font-weight: 700; color: var(--bc-energy-blue); white-space: nowrap; }
+        .qfoot { margin-top: auto; padding: 18px 22px; background: #f5fdf9; text-align: center; }
+        .qfoot .q-list { font-size: 0.85rem; color: #6b7280; }
+        .qfoot .q-list s { color: #9ca3af; }
+        .qfoot .q-new { font-family: 'Roboto Flex', sans-serif; font-size: 2.2rem; font-weight: 800; color: #0b7a45; line-height: 1; margin: 4px 0 2px; }
+        .qfoot .q-new span { font-size: 1rem; color: #0b6b40; font-weight: 600; }
+        .qfoot .q-save { display: inline-block; margin-top: 10px; background: var(--bc-green); color: var(--bc-navy); font-size: 0.78rem; font-weight: 800; padding: 0.35rem 0.9rem; border-radius: 9999px; }
+        @media (max-width: 760px) { .deal-grid { grid-template-columns: 1fr; } }
+        .price-note { font-size: 0.82rem; color: #6b7280; margin-top: 0.25rem; margin-bottom: var(--spacing-6); }
+        .step-list { counter-reset: step; list-style: none; margin: 0.5rem 0 0; }
+        .step-list li { position: relative; padding-left: 3rem; margin-bottom: var(--spacing-4); font-size: 1rem; }
+        .step-list li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: -2px; width: 2rem; height: 2rem; border-radius: 50%; background-color: var(--bc-energy-blue); color: var(--bc-white); font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; }
+
+        .quote-table { width: 100%; border-collapse: collapse; margin: 1rem 0 0.75rem; font-size: 0.95rem; }
+        .quote-table th { background-color: var(--bc-navy); color: white; padding: 10px; text-align: left; }
+        .quote-table td { padding: 12px 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
+        .quote-table tr:last-child td { border-bottom: none; }
+        .quote-table .item-name { font-weight: bold; color: var(--bc-energy-blue); display: block; margin-bottom: 4px; }
+        .quote-table .item-desc { font-size: 0.85rem; color: #555; }
+
+        @media (max-width: 1024px) {
+            .brief-band { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            #hero h1 { font-size: 2.2rem; }
+            section { padding: var(--spacing-12) 0; }
+            #sticky-nav .nav-links a:not(.nav-cta) { display: none; }
+            .brief-band { grid-template-columns: 1fr; }
+            .discovery-quote blockquote { font-size: 1.2rem; }
+            .compare-head, .compare-row { grid-template-columns: 1fr; }
+            .compare-row .cc-fix { border-left: none; }
+            .compare-head .ch-current, .compare-row .cc-current { border-bottom: 1px solid #ffe1c7; }
+            .quote-table, .quote-table tbody, .quote-table tr, .quote-table td { display: block; width: 100%; }
+            .quote-table thead { display: none; }
+            .quote-table tr { margin-bottom: 15px; border: 1px solid #ddd; padding: 10px; }
+            .quote-table td { border-bottom: none; padding: 5px 0; text-align: right; position: relative; }
+            .quote-table td::before { content: attr(data-label); position: absolute; left: 0; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; color: var(--bc-navy); }
+            .quote-table .item-name, .quote-table .item-desc { text-align: right; }
+        }
+
+        footer { background-color: var(--bc-navy); color: var(--bc-light-grey); padding: var(--spacing-8) 0; font-size: 0.9rem; }
+        .features-layout > * { min-width: 0; }
+        #feature-display-content .fd-head { min-width: 0; } #feature-display-content h3 { min-width: 0; overflow-wrap: break-word; }
+        @media (max-width: 600px) { #feature-display { padding: var(--spacing-6) var(--spacing-4); } #feature-display-content h3 { font-size: 1.25rem; } }
+        @media (max-width: 900px) { .feature-tile-grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); } .feature-tile .feature-name { overflow-wrap: anywhere; } }
+
+        /* ===== Arcus additions ===== */
+        .deal-grid.two { grid-template-columns: 1fr 1fr; max-width: none; }
+        @media (max-width: 760px) { .deal-grid.two { grid-template-columns: 1fr; } }
+        .qcard .qribbon { background: var(--bc-orange); color: #fff; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; text-align: center; padding: 0.35rem; }
+        .incl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem 1.5rem; list-style: none; margin: var(--spacing-6) 0 0; }
+        .incl-grid li { display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.9rem; }
+        .incl-grid li .msi { font-size: 19px; color: #0b7a45; flex-shrink: 0; margin-top: 1px; }
+        @media (max-width: 640px) { .incl-grid { grid-template-columns: 1fr; } }
+
+        /* Stack band: what stays, what moves */
+        .stack-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--spacing-4); margin-top: var(--spacing-6); }
+        .stack-card { background: var(--bc-white); border: 1px solid #e5e7eb; border-radius: 12px; padding: var(--spacing-4); box-shadow: var(--box-shadow); position: relative; }
+        .stack-card .st-name { font-family: 'Roboto Flex', sans-serif; font-weight: 800; color: var(--bc-navy); font-size: 1.05rem; }
+        .stack-card .st-role { font-size: 0.8rem; color: #6b7280; margin-bottom: 0.6rem; }
+        .stack-card .st-tag { display: inline-block; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.22rem 0.6rem; border-radius: 9999px; }
+        .stack-card .st-tag.keep { background: #eaf4ff; color: var(--bc-energy-blue); }
+        .stack-card .st-tag.move { background: #e9fbf1; color: #0b7a45; }
+        .stack-card .st-tag.later { background: #f3f4f6; color: #4b5563; }
+        .stack-card p { font-size: 0.82rem; margin-top: 0.5rem; line-height: 1.45; }
+        @media (max-width: 1000px) { .stack-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 560px) { .stack-grid { grid-template-columns: 1fr; } }
+
+        /* Quote pair in the pain section */
+        .quote-pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-6); margin-bottom: var(--spacing-8); }
+        .quote-pair .discovery-quote { margin: 0; max-width: none; }
+        .quote-pair .discovery-quote blockquote { font-size: 1.2rem; }
+        @media (max-width: 860px) { .quote-pair { grid-template-columns: 1fr; } }
+
+        /* Job journey stepper */
+        .journey { display: grid; grid-template-columns: 300px 1fr; gap: var(--spacing-8); align-items: start; }
+        .journey > * { min-width: 0; }
+        .journey-steps { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+        .journey-steps button { width: 100%; text-align: left; font-family: inherit; background: var(--bc-white); border: 2px solid #e5e7eb; border-radius: 12px; padding: 0.85rem 1rem; cursor: pointer; display: flex; align-items: center; gap: 0.8rem; transition: all .25s; }
+        .journey-steps button:hover { border-color: #9cc9ef; }
+        .journey-steps button.active { border-color: var(--bc-energy-blue); box-shadow: 0 6px 16px rgba(0,114,206,0.18); }
+        .journey-steps .js-num { width: 34px; height: 34px; border-radius: 50%; background: #eaf4ff; color: var(--bc-energy-blue); font-family: 'Roboto Flex', sans-serif; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .journey-steps button.active .js-num { background: var(--bc-energy-blue); color: #fff; }
+        .journey-steps .js-label { font-weight: 700; color: var(--bc-navy); font-size: 0.95rem; line-height: 1.25; }
+        .journey-steps .js-label small { display: block; font-weight: 500; color: #6b7280; font-size: 0.78rem; }
+        .journey-panel { background: var(--bc-white); border: 1px solid #e5e7eb; border-radius: var(--border-radius); box-shadow: var(--box-shadow); overflow: hidden; }
+        .jp-head { background: linear-gradient(135deg, var(--bc-navy), #0d2f5c); color: #fff; padding: 1.2rem 1.6rem; display: flex; align-items: center; gap: 0.9rem; }
+        .jp-head .msi { font-size: 34px; color: var(--bc-green); }
+        .jp-head h3 { color: #fff; margin: 0; font-size: 1.35rem; }
+        .jp-head .jp-who { font-size: 0.8rem; opacity: 0.75; }
+        .jp-body { padding: 1.4rem 1.6rem 1.6rem; display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-6); }
+        .jp-col h4 { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.35rem; }
+        .jp-col.now h4 { color: #b45309; }
+        .jp-col.bc h4 { color: #0b7a45; }
+        .jp-col h4 .msi { font-size: 16px; }
+        .jp-col ul { list-style: none; }
+        .jp-col li { position: relative; padding-left: 1.3rem; font-size: 0.9rem; margin-bottom: 0.5rem; line-height: 1.45; }
+        .jp-col li::before { content: ''; position: absolute; left: 0; top: 7px; width: 8px; height: 8px; border-radius: 50%; }
+        .jp-col.now li::before { background: var(--bc-orange); }
+        .jp-col.bc li::before { background: var(--bc-green); }
+        .jp-note { grid-column: 1 / -1; background: #f0fdf6; border: 1px solid #b9f3d6; border-radius: 10px; padding: 0.75rem 1rem; font-size: 0.88rem; color: var(--bc-navy); font-weight: 600; display: flex; gap: 0.5rem; align-items: flex-start; }
+        .jp-note .msi { font-size: 18px; color: #0b7a45; flex-shrink: 0; margin-top: 1px; }
+        .jp-nav { display: flex; justify-content: space-between; padding: 0 1.6rem 1.4rem; }
+        .jp-nav button { font-family: inherit; background: none; border: 1px solid #d1d5db; border-radius: 8px; padding: 0.45rem 0.9rem; font-weight: 700; color: var(--bc-navy); cursor: pointer; font-size: 0.85rem; }
+        .jp-nav button:disabled { opacity: 0.35; cursor: default; }
+        @media (max-width: 900px) { .journey { grid-template-columns: 1fr; } .journey-steps { flex-direction: row; overflow-x: auto; padding-bottom: 4px; } .journey-steps li { flex: 0 0 auto; } .journey-steps .js-label small { display: none; } }
+        @media (max-width: 640px) { .jp-body { grid-template-columns: 1fr; } }
+
+        .cs-thumb.noimg { background: linear-gradient(135deg, #0a3a70, var(--bc-energy-blue)); }
+        .journey-steps button:focus-visible, .hub-node:focus-visible, .feature-tile:focus-visible { outline: 3px solid var(--bc-green); outline-offset: 2px; }
+
+    </style>
+</head>
+<body>
+    <nav id="sticky-nav">
+        <div class="container">
+            <div class="nav-brand" style="display:flex; align-items:center; gap:0.7rem;">
+                <img src="https://i.postimg.cc/ydbgqXFm/Big-Change-White.png" alt="BigChange Logo">
+                <span style="color:rgba(255,255,255,0.45); font-weight:700;">+</span>
+                <span style="background:#fff; border-radius:6px; padding:3px 8px; display:inline-flex; align-items:center;"><img src="https://educationbusinessuk.net/sites/default/files/styles/large/public/2026-06/arcus.png?itok=PZ_Ddvz4" alt="Arcus Products Logo" style="height:22px; display:block;" onerror="this.parentElement.style.display='none';"></span>
+            </div>
+            <div class="nav-links">
+                <a href="#heard">What we heard</a>
+                <a href="#journey">A job, start to finish</a>
+                <a href="#features">The toolkit</a>
+                <a href="#case-studies">Proof</a>
+                <a href="#next-steps" class="nav-cta">Your two options</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                    <span class="logo-chip">
+                        <img src="https://educationbusinessuk.net/sites/default/files/styles/large/public/2026-06/arcus.png?itok=PZ_Ddvz4" alt="Arcus Products Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span class="logo-fallback" style="display:none;">Arcus Products</span>
+                    </span>
+                    <span style="color:rgba(255,255,255,0.5); font-size: 1.5rem; font-weight: bold;">+</span>
+                    <img src="https://i.postimg.cc/ydbgqXFm/Big-Change-White.png" alt="BigChange Logo" style="height: 40px;">
+                </div>
+
+                <div class="hero-pill"><span class="live-dot"></span> Prepared for Dominic, Tony &amp; Zoe &middot; Arcus Products</div>
+
+                <h1>Every photo, change and extra on a pool job. <span class="hero-accent">One folder, not a WhatsApp group.</span></h1>
+                <p class="subhead">Right now the job lives in WhatsApp, Google Calendar, Excel, Capsule and Outlook. When the lads are on site, the office loses sight of what&rsquo;s been agreed &mdash; and an unrecorded extra is money you don&rsquo;t get paid for. BigChange puts the whole job in one place, from survey to final invoice.</p>
+
+                <div class="cta-buttons">
+                    <a href="#journey" class="btn btn-primary">Walk through a pool job</a>
+                    <a href="#next-steps" class="btn btn-secondary">See your two options</a>
+                </div>
+
+                <div class="brief-band">
+                    <div class="brief-card">
+                        <span class="msi">pool</span>
+                        <h4>Bespoke pools &amp; enclosures</h4>
+                        <p>Family-run since 2009. Designed, made and installed UK-wide, from a new liner to a &pound;100k refurb.</p>
+                    </div>
+                    <div class="brief-card">
+                        <span class="msi">stacks</span>
+                        <h4>12&ndash;14 jobs live in the office</h4>
+                        <p>Two or three on site at once. Installs run a week to a month, big commercial jobs three or four months.</p>
+                    </div>
+                    <div class="brief-card">
+                        <span class="msi">engineering</span>
+                        <h4>4 in the field, up to 8</h4>
+                        <p>Your own fitters plus subcontractors when it&rsquo;s busy. Subbies are cheaper, if you can keep on top of them.</p>
+                    </div>
+                    <div class="brief-card">
+                        <span class="msi">school</span>
+                        <h4>Growing school work</h4>
+                        <p>More school pools means DBS checks, tighter paperwork and knowing where each lead came from.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trust" style="padding-top: var(--spacing-12); padding-bottom: 0;">
+            <div class="container">
+                <div class="edge-band" style="margin-bottom: 0;">
+                    <div class="edge-icon"><span class="msi">tab_close</span></div>
+                    <div>
+                        <h3>&ldquo;What we don&rsquo;t want is another element that&rsquo;s just doing a part of it.&rdquo;</h3>
+                        <p>Agreed. <span class="hl">Quotient stays</span> &mdash; it&rsquo;s the best tool for your option-heavy quotes. <span class="hl">Xero stays</span>, linked both ways. BigChange replaces the WhatsApp groups, Google Calendar and Excel job sheets, and <span class="hl">Capsule can follow later</span> if you want everything under one roof.</p>
+                    </div>
+                </div>
+
+                <div class="stack-grid">
+                    <div class="stack-card">
+                        <div class="st-name">Quotient</div>
+                        <div class="st-role">Option-by-option quotes</div>
+                        <span class="st-tag keep">Stays</span>
+                        <p>Customers keep ticking their liner, steps and cover online.</p>
+                    </div>
+                    <div class="stack-card">
+                        <div class="st-name">Xero</div>
+                        <div class="st-role">Accounts</div>
+                        <span class="st-tag keep">Stays &middot; linked</span>
+                        <p>Invoices sync across and paid status comes back.</p>
+                    </div>
+                    <div class="stack-card">
+                        <div class="st-name">WhatsApp &amp; Excel</div>
+                        <div class="st-role">Job chat, job sheets, pick lists</div>
+                        <span class="st-tag move">Into BigChange</span>
+                        <p>Photos, notes and pick lists live on the job folder.</p>
+                    </div>
+                    <div class="stack-card">
+                        <div class="st-name">Google Calendar</div>
+                        <div class="st-role">Diary, holidays, deliveries</div>
+                        <span class="st-tag move">Into BigChange</span>
+                        <p>One schedule for fitters, subbies, holidays and deliveries.</p>
+                    </div>
+                    <div class="stack-card">
+                        <div class="st-name">Capsule</div>
+                        <div class="st-role">Customer records</div>
+                        <span class="st-tag later">Your call, later</span>
+                        <p>BigChange has a full CRM. Move when it suits you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="heard">
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">What we heard on Friday</span>
+                    <h2>Where Arcus gets lost today &mdash; and what changes</h2>
+                    <p>You told us the gap is the job folder. Here&rsquo;s what you raised, with the fix next to it.</p>
+                </div>
+
+                <div class="quote-pair">
+                    <div class="discovery-quote">
+                        <span class="msi">format_quote</span>
+                        <blockquote>&ldquo;Where we get a little lost is on site &mdash; what&rsquo;s happening, what discussions have been had with the client while the boys are on site.&rdquo;</blockquote>
+                        <cite>Zoe &middot; Arcus Products</cite>
+                    </div>
+                    <div class="discovery-quote">
+                        <span class="msi">format_quote</span>
+                        <blockquote>&ldquo;If we can get control of subcontractors more, there&rsquo;s no reason we can&rsquo;t have more concurrent jobs.&rdquo;</blockquote>
+                        <cite>Dominic &middot; Arcus Products</cite>
+                    </div>
+                </div>
+
+                <div class="compare">
+                    <div class="compare-head">
+                        <div class="ch-current"><span class="msi">warning</span> Today</div>
+                        <div class="ch-fix"><span class="msi">bolt</span> With BigChange</div>
+                    </div>
+                    <div class="compare-row">
+                        <div class="cc-current"><strong>WhatsApp groups.</strong> Photos and updates sit in chats, and someone has to <em>move them to the computer</em>.</div>
+                        <div class="cc-fix"><strong>Photos straight to the job folder.</strong> From the app, <mark class="hl-g">date, time and GPS stamped</mark>, with notes and arrows drawn on them. Stored for good.</div>
+                    </div>
+                    <div class="compare-row">
+                        <div class="cc-current"><strong>Extras agreed on site, then disputed.</strong> &ldquo;Nobody told me there&rsquo;d be a charge for that&rdquo; &mdash; and <em>Arcus loses out</em>.</div>
+                        <div class="cc-fix"><strong>Every extra on record.</strong> The fitter logs it on the app with photos and <mark class="hl-g">the customer signs</mark>. The office is flagged to price it before the work goes ahead.</div>
+                    </div>
+                    <div class="compare-row">
+                        <div class="cc-current"><strong>Searching Outlook, Capsule and WhatsApp</strong> to find what a client said weeks ago.</div>
+                        <div class="cc-fix"><strong>One job folder.</strong> Emails dragged in, drawings, RAMS, photos, notes and invoices. <mark class="hl-g">One place to look</mark>.</div>
+                    </div>
+                    <div class="compare-row">
+                        <div class="cc-current"><strong>Subcontractors are hard to keep on top of.</strong> Paperwork, if it comes, arrives late.</div>
+                        <div class="cc-fix"><strong>Subbies on the app, no licence.</strong> <mark class="hl-g">&pound;1 per completed job</mark>, and their photos and sign-off land in your format, same day.</div>
+                    </div>
+                    <div class="compare-row">
+                        <div class="cc-current"><strong>&ldquo;They got here at 10 and left at 12.&rdquo;</strong> The customer&rsquo;s word against your fitters&rsquo;.</div>
+                        <div class="cc-fix"><strong>Geofenced arrival and departure.</strong> Real on-site times on the job report, and flags when a timesheet doesn&rsquo;t match.</div>
+                    </div>
+                    <div class="compare-row">
+                        <div class="cc-current"><strong>Colour-coded Google Calendar.</strong> Fitters, deliveries and holidays in one diary that <em>gets a bit messy</em>.</div>
+                        <div class="cc-fix"><strong>One schedule with a lane each.</strong> Fitters, subbies and a <mark class="hl-g">Deliveries</mark> lane, with holidays blocked out. View it by week, month or job list.</div>
+                    </div>
+                    <div class="compare-row">
+                        <div class="cc-current"><strong>RAMS written per job in Copilot,</strong> checked once at the start.</div>
+                        <div class="cc-fix"><strong>RAMS signed on the app.</strong> Day one blocks the job until they&rsquo;re read and signed. After that, a quick <mark class="hl-g">daily check</mark>.</div>
+                    </div>
+                    <div class="compare-row">
+                        <div class="cc-current"><strong>Stage invoices put in the diary</strong> so they don&rsquo;t get forgotten across 15 jobs.</div>
+                        <div class="cc-fix"><strong>Stages trigger the invoice.</strong> Move a job to &ldquo;ready for stage invoice&rdquo; and <mark class="hl-g">Zoe gets the task</mark>. Invoices sync to Xero.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" style="background-color: var(--bc-light-grey);">
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">One pool job, start to finish</span>
+                    <h2>From &ldquo;accepted&rdquo; in Quotient to the final invoice</h2>
+                    <p>Click through each stage. The job runs as one group job &mdash; survey, order, install, sign-off &mdash; so everything stays in one folder.</p>
+                </div>
+
+                <div class="journey">
+                    <ul class="journey-steps" id="journey-steps" role="tablist" aria-label="Job stages"></ul>
+                    <div class="journey-panel" id="journey-panel" role="tabpanel" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">One platform, everything connected</span>
+                    <h2>The toolkit &mdash; mapped to Arcus</h2>
+                    <p>Click any capability to see what it means for your pool and enclosure jobs.</p>
+                </div>
+
+                <div class="features-layout">
+                    <div id="feature-display">
+                        <div id="feature-display-content"></div>
+                    </div>
+                    <div>
+                        <div id="platform-hub" class="platform-hub-container">
+                            <div class="hub-center"><img src="https://i.postimg.cc/ydbgqXFm/Big-Change-White.png" alt="BigChange"></div>
+                        </div>
+                        <div id="feature-tile-grid" class="feature-tile-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="case-studies">
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">Proof from businesses like yours</span>
+                    <h2>Installers who design, survey and fit &mdash; already on BigChange</h2>
+                    <p>Multi-day installs, survey-then-fit jobs and customers who question the bill. Here&rsquo;s what changed for them.</p>
+                </div>
+                <div class="cs-grid">
+                    <div class="cs-card">
+                        <div class="cs-thumb">
+                            <img src="https://cdn.prod.website-files.com/652e90c1583f67a8de233f2d/67d9c89020f601f9adc9d34e_MPBI.webp" alt="MPB Installations modular building install" onerror="this.onerror=null; this.style.display='none'; this.parentElement.classList.add('noimg');">
+                            <div class="cs-thumb-overlay">
+                                <span class="cs-logo-chip">
+                                    <img src="placeholder-logo.png" alt="MPB Installations Logo" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                    <span class="cs-logo-fallback" style="display:none;">MPBI</span>
+                                </span>
+                                <span class="cs-industry">Modular building installs &middot; East Yorkshire</span>
+                            </div>
+                        </div>
+                        <div class="cs-body">
+                            <div class="cs-stats">
+                                <div class="cs-stat"><div class="n">+20%</div><div class="l">Business in the first year</div></div>
+                                <div class="cs-stat"><div class="n" style="font-size:1.45rem;">Zero</div><div class="l">Paper job sheets</div></div>
+                            </div>
+                            <div class="cs-quote">They build, deliver and install on site, just like you. Photos and tracking data from site ended the arguments. &ldquo;With real time reports, tracking data and photos from site, disputes with customers are very much a thing of the past.&rdquo;</div>
+                            <div class="cs-who">Dan Shepherdson<span>General Manager, MPB Installations</span></div>
+                            <a href="https://www.bigchange.com/success-stories/bigchange-gives-mpbis-modular-building-business-room-for-expansion" target="_blank" rel="noopener" class="cs-link">Read the case study &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="cs-card">
+                        <div class="cs-thumb">
+                            <img src="https://cdn.prod.website-files.com/652e90c1583f67a8de233f2d/66fffeecd0b5757357787596_66696b326806a97d16ecfc3b_65aec09e0b9ad311327cf096_659ea10382579ca5ea646cf5_1200pix_BigChange_Loft%25252520Boarding-001.jpeg" alt="Loft Boarding Scotland installer" onerror="this.onerror=null; this.style.display='none'; this.parentElement.classList.add('noimg');">
+                            <div class="cs-thumb-overlay">
+                                <span class="cs-logo-chip">
+                                    <img src="placeholder-logo.png" alt="Loft Boarding Scotland Logo" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                    <span class="cs-logo-fallback" style="display:none;">Loft Boarding Scotland</span>
+                                </span>
+                                <span class="cs-industry">Survey &amp; install &middot; Scotland</span>
+                            </div>
+                        </div>
+                        <div class="cs-body">
+                            <div class="cs-stats">
+                                <div class="cs-stat"><div class="n">4&times;</div><div class="l">Installs completed in a year</div></div>
+                                <div class="cs-stat"><div class="n">200%+</div><div class="l">Team growth</div></div>
+                            </div>
+                            <div class="cs-quote">Surveyors and installers work from logic-driven worksheets, so survey data is there for the install team and the office. &ldquo;The saving of 10 minutes here and 10 minutes there translates into significant efficiency gains for the business.&rdquo;</div>
+                            <div class="cs-who">Andrew Johnstone<span>Managing Director, Loft Boarding Scotland</span></div>
+                            <a href="https://www.bigchange.com/success-stories/loft-boarding-scotland-reaches-new-heights-with-bigchange" target="_blank" rel="noopener" class="cs-link">Read the case study &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="cs-card">
+                        <div class="cs-thumb">
+                            <img src="https://cdn.prod.website-files.com/652e90c1583f67a8de233f2d/67d935ca0168bbc2eae2c043_Union.jpeg" alt="Union Technical installation team" onerror="this.onerror=null; this.style.display='none'; this.parentElement.classList.add('noimg');">
+                            <div class="cs-thumb-overlay">
+                                <span class="cs-logo-chip">
+                                    <img src="placeholder-logo.png" alt="Union Technical Logo" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                    <span class="cs-logo-fallback" style="display:none;">Union Technical</span>
+                                </span>
+                                <span class="cs-industry">Home surveys &amp; installs &middot; Glasgow</span>
+                            </div>
+                        </div>
+                        <div class="cs-body">
+                            <div class="cs-stats">
+                                <div class="cs-stat"><div class="n">40%</div><div class="l">More install-team capacity (predicted)</div></div>
+                                <div class="cs-stat"><div class="n">75%</div><div class="l">Less routine reporting</div></div>
+                            </div>
+                            <div class="cs-quote">Home visits, site surveys and installs, with photos and signatures captured on site. &ldquo;BigChange has been part of our journey for many years and has helped us transition from start-up to nationwide service provider.&rdquo;</div>
+                            <div class="cs-who">Suzanne Coyle<span>Director, Union Technical</span></div>
+                            <a href="https://www.bigchange.com/success-stories/bigchange-helps-union-technical-achieve-government-retrofit-standards" target="_blank" rel="noopener" class="cs-link">Read the case study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rollout" style="background-color: var(--bc-light-grey);">
+            <div class="container">
+                <div class="section-title">
+                    <span class="eyebrow">Getting there</span>
+                    <h2>Built around Arcus, not the other way round</h2>
+                    <p>A dedicated implementation consultant maps your workflow and builds BigChange to fit it. Roll-out is usually eight to ten weeks, and you don&rsquo;t pay until it&rsquo;s running.</p>
+                </div>
+                <div class="phase-grid">
+                    <div class="phase-card p1">
+                        <div class="phase-num">1</div>
+                        <span class="phase-tag">Weeks 1&ndash;4 &middot; Discovery &amp; build</span>
+                        <h3>Your process, mapped</h3>
+                        <ul>
+                            <li>15&ndash;20 hours one-to-one with a consultant who&rsquo;s set up thousands of customers.</li>
+                            <li>Job stages, survey and install worksheets, RAMS and stage-invoice automations built for Arcus.</li>
+                            <li>Customers, vans and fitters loaded, and Xero linked.</li>
+                        </ul>
+                        <p class="phase-foot">Tip: turn up on day one with your process on a whiteboard.</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-num">2</div>
+                        <span class="phase-tag">Pilot</span>
+                        <h3>Two fitters first</h3>
+                        <ul>
+                            <li>Start with the fitter most likely to love it and the one most likely to push back.</li>
+                            <li>Between them, most of the creases get ironed out.</li>
+                            <li>Office runs a live job end to end before everyone switches.</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-num">3</div>
+                        <span class="phase-tag">Weeks 8&ndash;10 &middot; Roll-out</span>
+                        <h3>Everyone live, then build on it</h3>
+                        <ul>
+                            <li>Whole field team and subbies on the app.</li>
+                            <li>WhatsApp groups, Google Calendar and Excel job sheets retired.</li>
+                            <li>Later, if you want: move Capsule over, or link Quotient through the open API.</li>
+                        </ul>
+                        <p class="phase-foot">An account manager stays with you after go-live.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="next-steps">
+            <div class="container">
+                <div class="next-steps-card">
+                    <span class="eyebrow">Commercials</span>
+                    <h3>Your two options</h3>
+                    <p class="lead">The full platform for 4 office users and 4 in the field. Same package in both &mdash; the September Offer gets you to the &pound;500 a month Dominic mentioned.</p>
+
+                    <div class="deal-grid two">
+                        <div class="qcard">
+                            <div class="qcard-head">
+                                <span class="qtag">Option 1</span>
+                                <h4>BigChange Offer</h4>
+                                <p>25% off licences</p>
+                            </div>
+                            <div class="qrow"><span class="ql">8 &times; user licences<small>4 office + 4 field &middot; &pound;80 &rarr; &pound;60</small></span><span class="qv">&pound;480.00</span></div>
+                            <div class="qrow"><span class="ql">Fully managed onboarding<small>Spread over 36 months, then it drops off</small></span><span class="qv">&pound;133.00</span></div>
+                            <div class="qrow"><span class="ql">Xero integration<small>Usually &pound;125/month</small></span><span class="qv">Free</span></div>
+                            <div class="qfoot">
+                                <div class="q-list">At list price <s>&pound;773 / mo</s></div>
+                                <div class="q-new">&pound;613<span> / mo</span></div>
+                                <div class="q-save">Saves &pound;160/mo on list</div>
+                            </div>
+                        </div>
+                        <div class="qcard featured">
+                            <div class="qribbon">Valid until 30 September</div>
+                            <div class="qcard-head">
+                                <span class="qtag">Option 2</span>
+                                <h4>September Offer</h4>
+                                <p>42.5% off licences</p>
+                            </div>
+                            <div class="qrow"><span class="ql">8 &times; user licences<small>4 office + 4 field &middot; &pound;80 &rarr; &pound;46</small></span><span class="qv">&pound;368.00</span></div>
+                            <div class="qrow"><span class="ql">Fully managed onboarding<small>Spread over 36 months, then it drops off</small></span><span class="qv">&pound;133.00</span></div>
+                            <div class="qrow"><span class="ql">Xero integration<small>Usually &pound;125/month</small></span><span class="qv">Free</span></div>
+                            <div class="qfoot">
+                                <div class="q-list">At list price <s>&pound;773 / mo</s></div>
+                                <div class="q-new">&pound;501<span> / mo</span></div>
+                                <div class="q-save">Saves &pound;272/mo on list</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="incl-grid">
+                        <li><span class="msi">check_circle</span><span><strong>First payment deferred 3 months</strong> &mdash; nothing to pay until you&rsquo;re up and running.</span></li>
+                        <li><span class="msi">check_circle</span><span><strong>Subbies at &pound;1 per completed job</strong> &mdash; no licence needed.</span></li>
+                        <li><span class="msi">check_circle</span><span><strong>Dedicated implementation consultant</strong> &mdash; set up for you, not by you.</span></li>
+                        <li><span class="msi">check_circle</span><span><strong>Add users as you grow</strong> &mdash; Robert can come on later, and subbies never need a licence.</span></li>
+                    </ul>
+
+                    <p class="price-note" style="margin-top: var(--spacing-6);">Excludes VAT. 36-month term. Onboarding is &pound;133/month for the first 36 months instead of around &pound;5,500 up front.</p>
+
+                    <h3 style="font-size: 1.3rem; margin-top: var(--spacing-8);">Next steps</h3>
+                    <ol class="step-list">
+                        <li><strong>Talk it through as a team.</strong> Share this page with anyone who wasn&rsquo;t in the room.</li>
+                        <li><strong>Dominic decides.</strong> Any questions, call or email Emilio and we&rsquo;ll answer them straight away.</li>
+                        <li><strong>Kick-off with your consultant.</strong> Discovery sessions start, and your first payment is three months away.</li>
+                        <li><strong>Pilot, then everyone live</strong> in around eight to ten weeks.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container" style="text-align: center;">
+                <div style="display:flex; justify-content:center; align-items:center; gap:1.2rem; margin-bottom:1.8rem; flex-wrap:wrap;">
+                    <span class="logo-chip" style="padding:8px 14px;">
+                        <img src="https://educationbusinessuk.net/sites/default/files/styles/large/public/2026-06/arcus.png?itok=PZ_Ddvz4" alt="Arcus Products Logo" style="height:32px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span class="logo-fallback" style="display:none; font-size:1.1rem;">Arcus Products</span>
+                    </span>
+                    <span style="color:rgba(255,255,255,0.4); font-size:1.3rem; font-weight:bold;">+</span>
+                    <img src="https://i.postimg.cc/ydbgqXFm/Big-Change-White.png" alt="BigChange Logo" style="height:30px;">
+                </div>
+                <h3 style="color: var(--bc-light-grey); margin-bottom: 1rem;">The whole pool job, in one place.</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">Photos, extras, RAMS, timesheets and stage invoices &mdash; with Quotient and Xero still doing what they do best.</p>
+                <p style="opacity: 0.7;">This proposal has been built specifically for Dominic, Tony and Zoe at Arcus Products.</p>
+                <p style="opacity: 0.7; margin-top: 1rem;">&copy; 2026 BigChange. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // JOB JOURNEY (6-step click-through)
+            const steps = [
+                { label: 'Quote accepted', sub: 'Quotient stays', icon: 'handshake', who: 'Office',
+                  now: ['Customer ticks their options in Quotient and accepts.', 'Details get retyped into Capsule, Excel and a new WhatsApp group.', 'Deposit invoice worked out by hand in Xero.'],
+                  bc: ['The office opens a group job for the customer: survey, order, install and sign-off stages in one folder.', 'The accepted Quotient quote goes into the job attachments.', 'Deposit invoice raised from the job and synced to Xero.'],
+                  note: 'Quotient keeps doing the quoting. BigChange has an open API, so linking the two can come later.' },
+                { label: 'Survey', sub: 'Every choice captured', icon: 'fact_check', who: 'Dominic or a fitter',
+                  now: ['Site visit or video call to firm up what the client wants.', 'Choices end up in notes, emails or someone&rsquo;s memory.', 'Missing details, like the liner colour, only show up at ordering.'],
+                  bc: ['The survey worksheet walks through every choice: liner colour, steps, cover, pump and filter.', 'Mandatory questions mean it can&rsquo;t be closed with a gap in it.', 'Photos and measurements are time, date and GPS stamped into the folder.'],
+                  note: 'At ordering, the answer is already on the job. No searching back through Outlook.' },
+                { label: 'Order & plan', sub: 'Parts, POs, diary', icon: 'inventory_2', who: 'Tony &amp; the office',
+                  now: ['Orders tracked by memory and email.', 'Deliveries and installs added to Google Calendar.', 'The Excel job sheet and pick list get built and sent out.'],
+                  bc: ['Purchase orders raised from the job, with approval limits per person.', 'The install sits in an &ldquo;awaiting parts&rdquo; bucket, then gets dragged into the diary when ready.', 'Deliveries get their own lane on the schedule, so everyone sees Tuesday&rsquo;s slatted cover.'],
+                  note: 'Supplier invoices can be dropped in and matched to the right PO by the AI scanner.' },
+                { label: 'On site', sub: 'A week to four months', icon: 'construction', who: 'Fitters &amp; subbies',
+                  now: ['RAMS written per job in Copilot and checked at the start.', 'Photos and updates go into the job&rsquo;s WhatsApp group.', 'Hours and meal expenses sorted afterwards.'],
+                  bc: ['Day one: the job won&rsquo;t start until the RAMS are opened and signed. After that, a quick daily check.', 'Photos and videos go straight into the folder, with notes drawn on them.', 'Arrival and departure are logged by geofence, and expenses are logged against the job.'],
+                  note: 'Each day on a three-week install gets its own report, so you can find Tuesday&rsquo;s photo of the problem pipe in seconds.' },
+                { label: 'Something changes', sub: 'Extras on record', icon: 'edit_note', who: 'Fitter, customer, Tony',
+                  now: ['The customer asks for something extra and the lads just do it.', 'At the end: &ldquo;nobody told me there&rsquo;d be a charge for that.&rdquo;', 'Arcus ends up eating the cost.'],
+                  bc: ['The fitter logs the extra on the app with photos, a description and the customer&rsquo;s signature.', 'The office is flagged to price it, and the change sits on the job folder where everyone can see it.', 'The final invoice includes it, with the evidence attached.'],
+                  note: 'Every change is recorded with photos and a signature, so there&rsquo;s nothing to argue about at the end.' },
+                { label: 'Sign-off & invoice', sub: 'Stage payments', icon: 'receipt_long', who: 'Zoe',
+                  now: ['The lads phone to say it&rsquo;s done.', 'Mid-stage and final invoices are put in the diary so they don&rsquo;t get forgotten.', 'Each one is prepared by hand in Xero.'],
+                  bc: ['Customer signs off on the app, and a branded job report can be emailed to them.', 'Moving the job to &ldquo;ready for stage invoice&rdquo; sends Zoe a task automatically.', 'The invoice goes from BigChange, syncs to Xero, and payment status comes back.'],
+                  note: 'Planned against actual costs, labour and travel sit on the job, so you can see what each pool really made.' }
+            ];
+            const stepList = document.getElementById('journey-steps');
+            const panel = document.getElementById('journey-panel');
+            if (stepList && panel) {
+                let cur = 0;
+                const li = (arr) => arr.map(t => '<li>' + t + '</li>').join('');
+                const render = () => {
+                    const s = steps[cur];
+                    panel.innerHTML =
+                        '<div class="jp-head"><span class="msi">' + s.icon + '</span><div><h3>' + (cur + 1) + '. ' + s.label + '</h3><div class="jp-who">' + s.who + '</div></div></div>' +
+                        '<div class="jp-body">' +
+                            '<div class="jp-col now"><h4><span class="msi">history</span> Today</h4><ul>' + li(s.now) + '</ul></div>' +
+                            '<div class="jp-col bc"><h4><span class="msi">bolt</span> In BigChange</h4><ul>' + li(s.bc) + '</ul></div>' +
+                            '<div class="jp-note"><span class="msi">check_circle</span><span>' + s.note + '</span></div>' +
+                        '</div>' +
+                        '<div class="jp-nav"><button type="button" id="jp-prev"' + (cur === 0 ? ' disabled' : '') + '>&larr; Back</button><button type="button" id="jp-next"' + (cur === steps.length - 1 ? ' disabled' : '') + '>Next stage &rarr;</button></div>';
+                    stepList.querySelectorAll('button').forEach((b, i) => { b.classList.toggle('active', i === cur); b.setAttribute('aria-selected', i === cur ? 'true' : 'false'); });
+                    document.getElementById('jp-prev').addEventListener('click', () => { if (cur > 0) { cur--; render(); } });
+                    document.getElementById('jp-next').addEventListener('click', () => { if (cur < steps.length - 1) { cur++; render(); } });
+                };
+                steps.forEach((s, i) => {
+                    const item = document.createElement('li');
+                    const b = document.createElement('button');
+                    b.type = 'button';
+                    b.setAttribute('role', 'tab');
+                    b.innerHTML = '<span class="js-num">' + (i + 1) + '</span><span class="js-label">' + s.label + '<small>' + s.sub + '</small></span>';
+                    b.addEventListener('click', () => { cur = i; render(); });
+                    item.appendChild(b);
+                    stepList.appendChild(item);
+                });
+                render();
+            }
+
+            // FEATURE HUB (interactive platform matrix)
+            const hub = document.getElementById('platform-hub');
+            const tileGrid = document.getElementById('feature-tile-grid');
+            const featureDisplayContent = document.getElementById('feature-display-content');
+            if (hub && featureDisplayContent) {
+                const features = [
+                    { name: 'Job folders', icon: 'folder_open', desc: 'Every job has one folder: details, photos, emails, drawings, RAMS, job reports, POs and invoices, all a click from the customer record.', you: 'This is the missing piece you described. One place to look instead of five.' },
+                    { name: 'Group jobs & stages', icon: 'account_tree', desc: 'One job made of stages &mdash; survey, install, snagging &mdash; each scheduled separately but kept in the same folder.', you: 'A pool refurb runs as one job from survey to sign-off, even when the install is two months after the survey.' },
+                    { name: 'Photos & video', icon: 'photo_camera', desc: 'Fitters attach photos and videos from the app at any point, not just on a checklist. Each is date, time and GPS stamped, and can be drawn on.', you: '&ldquo;Pipe broken at 600mm&rdquo;, with an arrow on the photo, filed on the job instead of lost in a chat.' },
+                    { name: 'On-site extras', icon: 'add_task', desc: 'An optional worksheet the fitter can open whenever something changes: what&rsquo;s been asked for, photos and the customer&rsquo;s signature.', you: 'No more end-of-job arguments about charges nobody mentioned.' },
+                    { name: 'Survey worksheets', icon: 'fact_check', desc: 'Your own question sets with conditional logic and mandatory answers: yes/no, lists, photos, signatures, measurements.', you: 'Liner colour, steps, cover &mdash; captured at survey, not discovered at ordering.' },
+                    { name: 'Digital RAMS', icon: 'health_and_safety', desc: 'Gate the start of a job on opening and signing the RAMS. Every opening is time-stamped, and the answers go into a PDF on the job.', you: 'A generic RAMS covers most jobs, so Tony isn&rsquo;t writing one per job. A daily check keeps it live.' },
+                    { name: 'Shared schedule', icon: 'calendar_month', desc: 'A lane for every fitter, with travel time shown, holidays blocked out, and week, month and list views. Unscheduled jobs wait in buckets.', you: 'Replaces Google Calendar. Add a &ldquo;Deliveries&rdquo; lane and the whole week is still in one diary.' },
+                    { name: 'Subcontractor app', icon: 'handshake', desc: 'Subbies download the free app and complete jobs in your format. No licence, just &pound;1 per completed job.', you: 'Control of subbies is what unlocks more jobs running at once. Their photos and sign-off land same day.' },
+                    { name: 'Timesheets & expenses', icon: 'schedule', desc: 'Start and finish on the app, expenses logged against the job and approved by the office. Flags when a timesheet doesn&rsquo;t match the tracking.', you: 'Hourly pay and meal allowances handled without chasing, and fair to the lads.' },
+                    { name: 'Tracking & geofences', icon: 'pin_drop', desc: 'Live map of the team, with a geofence on each site logging real arrival and departure. Travel time and mileage are costed against the job.', you: 'Main purpose for the lads: health and safety. It also answers &ldquo;they were only here two hours&rdquo;.' },
+                    { name: 'Vans & checks', icon: 'local_shipping', desc: 'MOT, tax, insurance and service dates with alerts. Walkaround checks on the app; defects come through with photos.', you: 'A defect reported on Friday is on Zoe&rsquo;s dashboard on Monday morning.' },
+                    { name: 'Skills & DBS', icon: 'verified_user', desc: 'Skills with expiry dates on each person, and constraints on jobs. The system warns you before the wrong person is booked.', you: 'School jobs need a DBS-checked fitter. BigChange won&rsquo;t let you send someone who isn&rsquo;t.' },
+                    { name: 'Purchase orders', icon: 'shopping_cart', desc: 'Raise POs from the job with approval limits per person. The AI scanner matches supplier invoices to the right PO.', you: 'Parts for each pool tracked from order to arrival, with the cost on the job.' },
+                    { name: 'Stage automations', icon: 'bolt', desc: 'Move a job to a new stage and trigger alerts, emails or tasks automatically.', you: '&ldquo;Ready for stage invoice&rdquo; sends Zoe a task. No more diarising invoices so they don&rsquo;t get missed.' },
+                    { name: 'Xero integration', icon: 'sync_alt', desc: 'Products and services come in from Xero. Invoices go across, and paid status comes back.', you: 'Xero stays your accounts system, and the integration is free (usually &pound;125/month).' },
+                    { name: 'CRM & mailshots', icon: 'campaign', desc: 'Customer groups with their own custom fields, lead source tracking, and email shots to any group.', you: 'Tag schools and trade-show leads, then send the schools a holiday-install offer in a few clicks.' },
+                    { name: 'Map layers', icon: 'layers', desc: 'Put customers, installs or surveys on the live map, colour-coded by job type.', you: 'Sending someone to Birmingham? See the survey waiting nearby and do both.' },
+                    { name: 'Just Ask AI', icon: 'auto_awesome', desc: 'Ask a question in plain English and get the report back: jobs, costs, invoices, people.', you: '&ldquo;How much did we invoice that school in the last three months?&rdquo; Answered in seconds.' }
+                ];
+
+                const updateFeatureDisplay = (feature) => {
+                    featureDisplayContent.style.opacity = 0;
+                    setTimeout(() => {
+                        featureDisplayContent.innerHTML =
+                            '<div class="fd-head"><span class="msi">' + feature.icon + '</span><h3>' + feature.name + '</h3></div>' +
+                            '<p class="fd-desc">' + feature.desc + '</p>' +
+                            '<div class="fd-you"><span class="msi">check_circle</span><span>For Arcus: ' + feature.you + '</span></div>';
+                        featureDisplayContent.style.opacity = 1;
+                    }, 200);
+                };
+                const setActive = (nodes, node) => {
+                    nodes.forEach(n => n.classList.remove('active'));
+                    node.classList.add('active');
+                };
+
+                if (tileGrid) {
+                    features.forEach((feature, i) => {
+                        const t = document.createElement('button');
+                        t.type = 'button';
+                        t.className = 'feature-tile' + (i === 0 ? ' active' : '');
+                        t.innerHTML = '<span class="msi">' + feature.icon + '</span><span class="feature-name">' + feature.name + '</span>';
+                        t.addEventListener('click', () => {
+                            updateFeatureDisplay(feature);
+                            setActive(tileGrid.querySelectorAll('.feature-tile'), t);
+                        });
+                        tileGrid.appendChild(t);
+                    });
+                }
+
+                let activeIndex = 0;
+                const buildHub = () => {
+                    hub.querySelectorAll('.hub-node, .hub-line').forEach(el => el.remove());
+                    const w = hub.offsetWidth;
+                    if (!w) return;
+                    const cx = w / 2, cy = hub.offsetHeight / 2;
+                    const nodeR = 43;
+                    const outerRadius = w / 2 - nodeR - 2;
+                    const innerRadius = w / 2 - nodeR - 98;
+                    const outer = features.filter((_, i) => i % 2 === 0);
+                    const inner = features.filter((_, i) => i % 2 !== 0);
+                    const place = (list, radius, isOuter) => {
+                        const step = (2 * Math.PI) / list.length;
+                        list.forEach((feature, i) => {
+                            const angle = (i * step) - (Math.PI / 2) + (isOuter ? 0 : step / 2);
+                            const x = radius * Math.cos(angle) + cx - nodeR;
+                            const y = radius * Math.sin(angle) + cy - nodeR;
+                            const node = document.createElement('div');
+                            node.className = 'hub-node' + (features.indexOf(feature) === activeIndex ? ' active' : '');
+                            node.tabIndex = 0;
+                            node.setAttribute('role', 'button');
+                            node.style.left = x + 'px';
+                            node.style.top = y + 'px';
+                            node.innerHTML = '<span class="msi">' + feature.icon + '</span><span class="feature-name">' + feature.name + '</span>';
+                            const activate = () => {
+                                activeIndex = features.indexOf(feature);
+                                updateFeatureDisplay(feature);
+                                setActive(hub.querySelectorAll('.hub-node'), node);
+                            };
+                            node.addEventListener('click', activate);
+                            node.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } });
+                            const line = document.createElement('div');
+                            line.className = 'hub-line';
+                            const dist = Math.sqrt(Math.pow(x + nodeR - cx, 2) + Math.pow(y + nodeR - cy, 2));
+                            const rot = Math.atan2(y + nodeR - cy, x + nodeR - cx) * (180 / Math.PI);
+                            line.style.width = Math.max(dist - nodeR + 8, 0) + 'px';
+                            line.style.top = cy + 'px';
+                            line.style.left = cx + 'px';
+                            line.style.transform = 'rotate(' + rot + 'deg)';
+                            hub.appendChild(line);
+                            hub.appendChild(node);
+                        });
+                    };
+                    place(outer, outerRadius, true);
+                    place(inner, innerRadius, false);
+                };
+                buildHub();
+                let resizeTimer;
+                window.addEventListener('resize', () => {
+                    clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(buildHub, 200);
+                });
+                updateFeatureDisplay(features[0]);
+            }
+
+            // Scroll-reveal
+            const revealEls = Array.from(document.querySelectorAll('.section-title, .compare, .edge-band, .stack-grid, .quote-pair, .journey, .phase-grid, .cs-grid, .next-steps-card'));
+            revealEls.forEach(el => el.classList.add('reveal'));
+            if ('IntersectionObserver' in window) {
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach((entry, i) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => entry.target.classList.add('visible'), Math.min(i, 4) * 70);
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.08 });
+                revealEls.forEach(el => io.observe(el));
+                setTimeout(() => revealEls.forEach(el => el.classList.add('visible')), 2500);
+            } else {
+                revealEls.forEach(el => el.classList.add('visible'));
+            }
+
+            const nav = document.getElementById('sticky-nav');
+            if (nav) {
+                const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
+                window.addEventListener('scroll', onScroll, { passive: true });
+                onScroll();
+            }
+        });
+    </script>
+</body>
+</html>
